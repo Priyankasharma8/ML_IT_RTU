@@ -1,18 +1,1 @@
-import csv
-import random
-
-branches = ['CIVIL', 'CSE', 'EE', 'ME', 'IT']
-students = []
-
-for i in range(100):
-    student = {}
-    student['10th Percentage'] = round(random.uniform(60, 100), 2)
-    student['12th Percentage'] = round(random.uniform(60, 100), 2)
-    student['Branch'] = random.choice(branches)
-    students.append(student)
-
-with open('students.csv', mode='w') as file:
-    writer = csv.DictWriter(file, fieldnames=['10th Percentage', '12th Percentage', 'Branch'])
-    writer.writeheader()
-    for student in students:
-        writer.writerow(student)
+output = activation_function(input_1 * weight_1 + input_2 * weight_2 + input_3 * weight_3 + input_4 * weight_4 + bias)
